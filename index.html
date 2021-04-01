@@ -1,52 +1,95 @@
 ---
 title: "Home"
 ---
-<section class="py-8 md:py-11">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-10 col-lg-8 text-center">
-            <div class="w-50 mx-auto mb-5">
-                {% include agewell-logo.html %}
-            </div>
+<section class="py-12 md:py-24">
+    <div class="container mx-auto">
+        <div class="flex flex-row justify-center items-center">
+            <div class="text-center w-3/4 mx-auto">
+                <div class="w-3/4 md:w-96 mx-auto mb-6 text-gray-900">
+                    {% include agewell-logo.html %}
+                </div>
 
-            <!-- Text -->
-            <p class="lead text-muted mb-5">
-                We promote and foster positive aging and development by cultivating human connection and advancement through the use of research-based technology.
-            </p>
-
-            <!-- Button -->
-            <p class="mb-7 mb-md-9">
-                <a class="btn btn-primary shadow lift" href="#!">
-                Open an account <i class="fe fe-arrow-right ml-3"></i>
-                </a>
-            </p>
-
+                <!-- Text -->
+                <div class="text-xl text-gray-400 mb-10 md:mb-16">
+                    Fostering an active aging lifestyle by cultivating engaging connections and helping your plan for your future.
+                </div>
             </div>
         </div> <!-- / .row -->
-        <div class="row">
-            <div class="col-10 mx-auto">
+        <div class="flex flex-row">
+            <div class="w-3/4 mx-auto">
                 <!-- Video -->
-                <div class="position-relative zindex-100">
-                    <video class="img-fluid card shadow-lg rounded-lg" src="assets/videos/top-video.mp4" autoplay="" loop="" muted="">
-                        Sorry, your browser doesn't support embedded videos,
-                        but don't worry, you can <a href="assets/videos/top-video.mp4">download it</a>
-                        and watch it with your favorite video player!
+                <div class="relative z-10">
+                    <video class="shadow-lg rounded-lg" src="{{ 'assets/videos/top-video-2.mp4' | relative_url }}" autoplay="" loop="" muted="">
                     </video>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<div class="position-relative mt-n12 mt-md-n15">
-    <div class="shape shape-top">
-        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>
+<div class="relative -mt-26 md:-mt-52">
+    <div class="shape absolute right-0 left-0 bottom-0 w-full text-gray-900 overflow-hidden">
+        <svg class="w-full h-auto origin-top"  viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>
     </div>
 </div>
-<section class="slice slice-lg">
-
+<section class="pb-12 pt-26 md:pt-52 md:pb-24 bg-gray-900">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-10 w-3/4 mx-auto">
+        <div class="md:order-2 text-center w-full md:w-72">
+            <img class="mb-10 mt-10 md:mt-0 md:mb-0" src="{{ 'assets/images/top-image.svg' | relative_url }}" alt="...">
+        </div>
+        <div class="md:order-1 max-w-xl">
+            <h2 class="text-3xl text-white mb-4 leading-10">
+            We strive to make the active aging lifestyle meaningfull and engaging.
+            </h2>
+            <div class="text-gray-400 text-xl leading-8">
+                Getting older doesn't mean we've hit an expiration date.<br> 
+                AgeWell uses research based technologies to help older individuals cultivate meaningfull social engagment and helps them plan their acheivments of tomorrow.
+            </div>
+        </div>
+    </div>
 </section>
-<div class="position-relative">
-    <div class="shape shape-bottom shape-flip-x">
-        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path></svg>
+<div class="relative">
+    <div class="shape absolute right-0 left-0 top-0 w-full shape-flip-x text-gray-900 overflow-hidden">
+        <svg class="w-full h-auto origin-bottom" viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path></svg>
     </div>
 </div>
+<section class="py-12 md:pt-5 md:pb-24 bg-white">
+    <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
+        <div class="flex-auto mb-4 -mt-16 md:mt-0 md:mb-0 md:ml-8 md:order-2">
+            <div class="rounded-xl shadow-md bg-white p-4 w-96 self-start" style="min-height: 1px; max-width: 50%; margin-left: 40%; transform: translate3d(0px, 3.5235031512605044px, 0px);">
+                <div class="uppercase font-light text-xs mb-1">Goal</div>
+                <h3 class="text-xl border-b-4 border-blue-500 pb-1">Travel</h3>
+                <p class="text-gray-600 pt-4 pb-28">
+                    Take a trip to Brazil.
+                </p>
+            </div>
+            <div class="rounded-xl shadow-md bg-white p-4 w-96 self-start" style="min-height: 1px; max-width: 50%; margin-top: -35%; transform: translate3d(0px, 33.14732142857143px, 0px);">
+                <div class="uppercase font-light text-xs mb-1">Goal</div>
+                <h3 class="text-xl border-b-4 border-yellow-500 pb-1">Exercise</h3>
+                <p class="text-gray-600 pt-4 pb-28">
+                    Walk for 30 minutes every day.
+                </p>
+            </div>
+        </div>
+        <div class="flex-auto w-full md:w-1/2 mt-16 md:mt-28 md:mr-6 md:order-1">
+            <h1 class="text-4xl mb-4"><span class="font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">Advance</span> by AgeWell</h1>
+            <p class="text-xl text-gray-600 mb-6 leading-8">
+                Employment of workers aged 65+ has increased <span class="font-bold">117% - 122%</span> in the last 20 years. With forward motion through achievment planning, we create and support opportunities for older adults to remain relevant and advance in their communities and workforce.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="py-12 md:py-24 bg-white">
+    <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
+        <div class="flex-auto mb-4 md:mb-0 md:mr-6">
+            <div class="flex flex-col mb-8 md:mb-0">
+                <img class="w-full rounded-xl shadow-xl border border-gray-200 self-start" src="{{ 'assets/images/top-img.jpg' | relative_url }}" alt="...">
+            </div>
+        </div>
+        <div class="flex-auto w-full md:ml-6">
+            <h1 class="text-4xl mb-4"><span class="font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">Connect</span> by AgeWell</h1>
+            <p class="text-xl text-gray-600 mb-6 leading-8">
+                Connect by AgeWell is an online service creating meaningful connections across generations to foster wellness and positive aging by connecting members with virtual companions, providing a space to participate in events from the comfort of your home or facility and facilitaing a platform for members and thier caregivers to stay organinzed.
+            </p>
+        </div>
+    </div>
+</section>

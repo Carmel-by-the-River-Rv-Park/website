@@ -1,0 +1,18 @@
+.shape>* {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.shape-top {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+.shape-flip-x {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.logo-gradient-stop-1 {
+    stop-color: #3688fc;
+}
+.logo-gradient-stop-2 {
+    stop-color: #60a5fa;
+}
