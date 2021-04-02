@@ -5,7 +5,7 @@
             <div class="flex-auto w-1/2 mr-10 mb-5">
                 <div class="flex flex-col w-1/2">
                     <a class="text-white" href="{% link index.html %}">{% include agewell-logo.html %}</a>
-                    <p class="mt-10 text-sm opacity-8 pr-lg-4">AgeWell Technologies is a gerontechnology company based in Fort Collins, CO. Specailizing in the needs of the aging population, we strive to make the active aging lifestyle meaningfull and engaging through the use of technology.</p>
+                    <p class="mt-10 text-sm opacity-8 pr-lg-4">AgeWell Technologies LLC is a gerontechnology company based in Fort Collins, CO. Specailizing in the needs of the aging population, we strive to make the active aging lifestyle meaningfull and engaging through the use of technology.</p>
                     <ul class="flex flex-row mt-4">
                         <li class="mr-4">
                             <a class="nav-link pl-0" href="https://www.linkedin.com/company/agewell-technologies" target="_blank">
@@ -29,36 +29,34 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex-auto w-1/4 ml-10 flex flex-row">
+            <div class="flex-auto justify-self-end ml-10 flex flex-row">
                 <div class="w-1/2">
-                    <h6 class="text-white font-bold mb-3">About</h6>
+                    <h6 class="text-white font-bold mb-3">Partners</h6>
                     <ul class="list-unstyled">
-                        <li><a class="hover:text-white" href="#">Services</a></li>
-                        <li><a class="hover:text-white"href="#">Pricing</a></li>
-                        <li><a class="hover:text-white"href="#">Contact</a></li>
-                        <li><a class="hover:text-white"href="#">Careers</a></li>
+                        <li><a class="hover:text-white" href="{% link contact.html %}">Contact</a></li>
+                        <li><a class="hover:text-white" href="{% link careers.html %}">Careers</a></li>
                     </ul>
                 </div>
-                <div class="w-1/2 mb-5">
+                <!-- <div class="w-1/2 mb-5">
                     <h6 class="text-white font-bold mb-3">Company</h6>
                     <ul class="list-unstyled">
+                        <li><a class="hover:text-white" href="#">About</a></li>
+                        <li><a class="hover:text-white"href="#">Services</a></li>
                         <li><a class="hover:text-white"href="#">Community</a></li>
-                        <li><a class="hover:text-white"href="#">Help center</a></li>
                         <li><a class="hover:text-white"href="#">Support</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="my-4"><br></div>
         <div class="row align-items-center justify-content-md-between pb-4">
-            <div class="col-md-6">
-                <div class="copyright text-sm font-weight-bold text-center text-md-left">© {{ site.time | date: '%Y' }} <a href="{% link index.html %}" class="font-bold" target="_blank">AgeWell Technologies</a>. All rights reserved</div>
+            <div class="w-full md:w-1/2">
+                <div class="copyright text-sm font-weight-bold text-center md:text-left">© {{ site.time | date: '%Y' }} <a href="{% link index.html %}" class="font-bold" target="_blank">AgeWell Technologies LLC</a>. All rights reserved</div>
             </div>
-            <div class="col-md-6">
+            <div class="w-full md:w-1/2">
                 <ul class="flex flex-row justify-center md:justify-end mt-3 md:mt-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
+                    <li class="mr-2"><a href="{% link privacy.html %}">Privacy</a></li>
+                    <li class="mr-2"><a href="{% link cookies.html %}">Cookies</a></li>
                 </ul>
             </div>
         </div>
