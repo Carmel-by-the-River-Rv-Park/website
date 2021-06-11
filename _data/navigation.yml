@@ -1,0 +1,15 @@
+- name: About Us
+  link: /#about
+- name: Amenities
+  link: /#amenities
+- name: Reviews
+  link: /#reviews
+- name: FAQ
+  link: /#faq
+- name: Reservations
+  link: https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90
+  onclick: "window.open(this.href,'_blank');return false;"
+- name: Find Us
+  link: /#find_us
+- name: Covid 19
+  link: /#covid

@@ -1,95 +1,220 @@
 ---
 title: "Home"
 ---
+<nav class="sticky top-0 text-center py-6 z-50 bg-white">
+    {% for item in site.data.navigation %}
+        <a class="ml-4 text-lg font-bold hover:text-asparagus-500" href="{{ item.link }}" onclick="{{ item.onclick }}">
+            {{ item.name }}
+        </a>
+    {% endfor %}
+</nav>
 <section class="py-12 md:py-24">
     <div class="container mx-auto">
         <div class="flex flex-row justify-center items-center">
             <div class="text-center w-3/4 mx-auto">
-                <div class="w-3/4 md:w-96 mx-auto mb-6 text-gray-900">
-                    {% include agewell-logo.html %}
+                <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-gray-900">
+                    {% include carmelrv-logo.html %}
                 </div>
-
-                <!-- Text -->
-                <div class="text-xl text-gray-400 mb-10 md:mb-16">
-                    Fostering an active aging lifestyle by cultivating engaging connections and helping you plan for your future.
-                </div>
+                <h2 class="transition duration-200 ease-in-out mt-4 text-2xl text-asparagus-200 bg-asparagus-600 hover:text-asparagus-600 hover:bg-asparagus-200 px-4 py-2 rounded inline-block border-asparagus-700 border-2"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
             </div>
         </div> <!-- / .row -->
-        <div class="flex flex-row">
+        <div class="flex flex-row mt-12">
             <div class="w-3/4 mx-auto">
                 <!-- Video -->
                 <div class="relative z-10">
-                    <video class="shadow-lg rounded-lg" src="{{ 'assets/videos/top-video-2.mp4' | relative_url }}" autoplay="" loop="" muted="" playsinline="">
-                    </video>
+                    <video class="shadow-lg rounded-lg" src="{{ 'assets/videos/top-video-3.mp4' | relative_url }}" autoplay="" loop="" muted="" playsinline="">
+                    <!-- <img class="shadow-lg rounded-lg" src="{{ 'assets//header-bg.jpg' | relative_url }}" > -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 <div class="relative -mt-26 md:-mt-52">
-    <div class="shape absolute right-0 left-0 bottom-0 w-full text-gray-900 overflow-hidden">
+    <div class="shape absolute right-0 left-0 bottom-0 w-full text-asparagus-400 overflow-hidden">
         <svg class="w-full h-auto origin-top"  viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>
     </div>
 </div>
-<section class="pb-12 pt-26 md:pt-52 md:pb-24 bg-gray-900">
-    <div class="flex flex-col md:flex-row justify-between items-center mb-10 w-3/4 mx-auto">
-        <div class="md:order-2 text-center w-full md:w-72">
-            <img class="mb-10 mt-10 md:mt-0 md:mb-0" src="{{ 'assets/images/top-image.svg' | relative_url }}" alt="...">
-        </div>
-        <div class="md:order-1 max-w-xl">
-            <h2 class="text-3xl text-white mb-4 leading-10">
-            We strive to make the active aging lifestyle meaningful and engaging.
-            </h2>
-            <div class="text-gray-400 text-xl leading-8">
-                Getting older doesn't mean we've hit an expiration date.
-                AgeWell uses research based technologies to help older individuals cultivate meaningful social engagement and helps them plan their achievements of tomorrow.
+<section id="about" class="pb-12 pt-26 md:pt-52 md:pb-24 bg-asparagus-400">
+    <div class="mb-10 w-3/4 mx-auto">
+        <h2 class="text-3xl text-asparagus-100 mb-6 leading-10">
+            A Little About Us 
+        </h2>
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="md:order-1 text-center w-full md:w-auto md:mr-12 flex flex-row">
+                <img class="w-1/2 rounded mr-2" src="{{ 'assets/images/about-image.jpg' | relative_url }}" alt="Camping in the monterey area">
+                <a class="w-1/2" href="{{ 'assets/images/parkmap.pdf' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
+                    <img class="rounded" src="{{ 'assets/images/parkmap.pdf' | relative_url }}" alt="Carmel By the River Rv Park Map">
+                </a>
+            </div>
+            <div class="md:order-2 w-3/4">
+                <div class="text-asparagus-100 text-xl leading-8">
+                    <p class="mb-4">Family owned and operated for over 40 years, our boutique park is nestled into the lush natural surroundings of Carmel Valley and has all the amenities you need to enjoy your stay on the Monterey Peninsula.</p>
+                    <p class="mb-4">We offer full-hookup sites (including wifi and cable) that can accommodate up to 50ft RVs, with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
+                    <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, air hockey, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. Need a group meeting area? Our club room, complete with kitchen and seating for thirty, should fit any group’s needs with reservations.</p>
+                </div>
+                <h2 class="transition duration-200 ease-in-out mt-4 text-2xl text-asparagus-200 bg-asparagus-600 hover:text-asparagus-600 hover:bg-asparagus-200 px-4 py-2 rounded inline-block border-asparagus-700 border-2"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
+                <h3 class="mt-4">or call</h3>
+                <h3 class="text-xl font-bold mt-2 hover:text-asparagus-100 transition duration-200 ease-in-out"><a class="phone" href="tel:+18316249329">+1 (831) 624-9329</a></h3>
             </div>
         </div>
     </div>
 </section>
 <div class="relative">
-    <div class="shape absolute right-0 left-0 top-0 w-full shape-flip-x text-gray-900 overflow-hidden">
+    <div class="shape absolute right-0 left-0 top-0 w-full shape-flip-x text-asparagus-400 overflow-hidden">
         <svg class="w-full h-auto origin-bottom" viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path></svg>
     </div>
 </div>
-<section class="py-12 md:pt-5 md:pb-24 bg-white">
+
+<!-- Amenities -->
+<section id="amenities" class="py-12 md:pt-12 md:pb-24 bg-white">
     <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
-        <div class="flex-auto mb-4 -mt-16 md:mt-0 md:mb-0 md:ml-8 md:order-2">
-            <div class="rounded-xl shadow-md bg-white p-4 w-96 self-start" style="min-height: 1px; max-width: 50%; margin-left: 40%; transform: translate3d(0px, 3.5235031512605044px, 0px);">
-                <div class="uppercase font-light text-xs mb-1">Goal</div>
-                <h3 class="text-xl border-b-4 border-blue-500 pb-1">Travel</h3>
-                <p class="text-gray-600 pt-4 pb-28">
-                    Take a trip to Brazil.
-                </p>
-            </div>
-            <div class="rounded-xl shadow-md bg-white p-4 w-96 self-start" style="min-height: 1px; max-width: 50%; margin-top: -35%; transform: translate3d(0px, 33.14732142857143px, 0px);">
-                <div class="uppercase font-light text-xs mb-1">Goal</div>
-                <h3 class="text-xl border-b-4 border-yellow-500 pb-1">Exercise</h3>
-                <p class="text-gray-600 pt-4 pb-28">
-                    Walk for 30 minutes every day.
-                </p>
-            </div>
-        </div>
         <div class="flex-auto w-full md:w-1/2 mt-16 md:mt-28 md:mr-6 md:order-1">
-            <h1 class="text-4xl mb-4"><span class="font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">Advance</span> by AgeWell</h1>
+            <h1 class="text-4xl mb-4">Our Site Types & Amenities</h1>
             <p class="text-xl text-gray-600 mb-6 leading-8">
-                Employment of workers aged 65+ has increased <span class="font-bold">117% - 122%</span> in the last 20 years. With forward motion through achievement planning, we create and support opportunities for older adults to advance in their communities and workforce.
+                Close to all major attractions, so you can go hit the links at Pebble Beach, watch the races at Laguna Seca, lay in the sun on beautiful Carmel Beach, or simply relax in our garden-like setting and enjoy. All our sites provide free High Speed WiFi and Cable TV, private BBQ's and are pet freindly.
             </p>
         </div>
     </div>
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-1">
+        {% assign amenities = site.amenities | sort: "order" %}
+        {% for amenity in amenities %}
+            <div class="gallery-photo expandable-photo">
+                <div class="inner object-contain relative">
+                    <div class="overlay"></div>
+                    <div class="title">{{ amenity.name }}</div>
+                    <img src="{{ 'assets/images/' | append: amenity.image | relative_url }}" title="{{ amenity.name }}" alt="{{ amenity.details }}">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </section>
-<section class="py-12 md:py-24 bg-white">
+
+<!-- Reviews -->
+<section id="reviews">
+    <div class="bg-center bg-cover py-24" style="background-image: url( {{ 'assets/images/divider-img-bg3.png' | relative_url }} );">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 xl:gap-8 w-3/4 mx-auto">
+            {% for review in site.data.reviews %}
+                <div class="bg-gray-100 bg-opacity-90 rounded-xl px-4 py-6">
+                    <div class="text-center">
+                        <h4 class="text-xl font-bold">{{ review.author }}</h4>
+                        <p class="mt-2">{{ review.text }}</p>
+                    </div>
+                    <div class="text-center pt-4">
+                        <svg class="opacity-2 mx-auto" width="60px" height="60px" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>quote-down</title>
+                            <g id="quote-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z" id="quote-up" fill="#48484A" fill-rule="nonzero" transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) "></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <h3 class="text-center text-white text-xl mt-12"><a class="p-2 rounded-lg bg-asparagus-400 border-asparagus-700 border-2 text-asparagus-100 hover:text-asparagus-700" href="https://g.page/carmelrv/review?rc" onclick="window.open(this.href,'_blank');return false;">Click here to share your review!</a></h3>
+    </div>
+</section>
+
+<!-- Rates -->
+<section id="rates" class="py-12 md:py-24 text-asparagus-300 bg-asparagus-800">
+    <div class="flex flex-col mx-auto w-3/4">
+        <h2 class="text-4xl mb-4 text-asparagus-100">Current Rates</h2>
+        <p class="text-xl mb-4">Our standard rate per night is <b>$75.00</b>, which includes 2 adults & children 12 & under, full hookups with 30-amp service, Wi-Fi, cable, a picnic table and grill at your site, and all taxes.</p>
+        <h3 class="text-lg">Extras (cost per night)</h3>
+        <p>$10.00 for Premium Sites (includes a paved patio)</p>
+        <p>$5.00 for 50-amp service</p>
+        <p>$3.00 for extra persons over the age of 12 years</p>
+        <p>$2.00 for dogs (limit 3 dogs per site)</p>
+        <p>$5.00 for extra cars (you can have a rig and a car in a site, any car after that is extra)</p>
+        </br>
+        <p>(We do offer $5.00 per night discount for those 65+ or Active Military)</p>
+        <p class="my-6"><a href="{% link rates.html %}" class="p-2 rounded-lg bg-asparagus-400 border-asparagus-700 border-2 text-asparagus-100 hover:text-asparagus-700" data-toggle="modal" data-target="#ratesModal">View Our Complete Seasonal Rates</a></p>
+        <h3 class="text-lg mt-4">Call our office to learn about our winter monthly rates!</h3>
+        <h3 class="text-lg"><a class="phone" href="tel:+18316249329"><strong>+1 (831) 624-9329</strong></a></h3>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-12 md:py-24 bg-white">
     <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
-        <div class="flex-auto mb-4 md:mb-0 md:mr-6">
-            <div class="flex flex-col mb-8 md:mb-0">
-                <img class="w-full rounded-xl shadow-xl border border-gray-200 self-start" src="{{ 'assets/images/top-img.jpg' | relative_url }}" alt="...">
+        <div class="flex-auto w-full">
+            <h1 class="text-4xl mb-4">Frequently Asked Questions</h1>
+            <p class="text-xl text-gray-600 mb-6 leading-8">
+                Please view our FAQ to answer any common questions you may have. For any other questions, please call our office at <a class="phone" href="tel:+18316249329" class="text-xl font-bold hover:text-asparagus-100 transition duration-200 ease-in-out">+1 (831) 624-9329</a>.
+            </p>
+            <div class="flex flex-row items-start">
+                <div class="w-full md:w-1/2 mr-6">
+                    <h4 class="text-lg font-bold">How big is your park?</h4>
+                    <p>We are a small-boutique park with only 35 sites total. The layout of the park is in a loop which is just over an eighth of a mile, so the whole property is about half the size of a football field. It is a garden-like setting, with lots of foliage, flowers, and trees throughout the park. We are tucked away in a residential area, so it is quiet and peaceful.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Do you have sites on the river?</h4>
+                    <p>The river runs along the base of the property line, so unfortunately there is no direct view, or waterfront, and there is nothing recreational allowed since it has not been accessible for over 10 years since the drought. The closest access to water is Carmel Beach, located off of Scenic Road in Downtown Carmel-by-the-Sea which is 8 miles West from our location (10 minute drive - not in walking distance from our park). The town is very small and has narrow roads, so there is no RV parking available.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Are your sites pull-through sites or back-in sites?</h4>
+                    <p>Most of our sites are back-in sites. We do have a handful of pull-forward sites for motorhomes only, but they are not pull-throughs as you have to reverse when leaving.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Do you have full hookups?</h4>
+                    <p>Yes we do. We offer sites with either 30 or 50 amp.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Are there hiking trails from the park?</h4>
+                    <p>Our park is surrounded by private property and there are no hiking trails from the park. Closest hiking trails are <strong>Garland Ranch Regional Park</strong> (5.2 miles East of our location; dog friendly), and Point Lobos (8.6 miles Southwest of our location; not dog friendly)</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Are there fire pits at the sites?</h4>
+                    <p>Fire pits are not provided however you may burn charcoal or Duraflame logs in your site’s grill. Both are available at the Park Office. Propane fire pits are also available for rent. We do have a seating and dining area outside the Park Office with a propane fire pit for guest use.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Can I pick my site when making reservations?</h4>
+                    <p>Final site assignments are made the day of your arrival. We will take requests and try our best to honor those requests. </p>
+                </div>
+                <div class="w-full md:w-1/2 ml-6">
+                    <h4 class="text-lg font-bold">Do you have a swimming pool?</h4>
+                    <p>We do not.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Do you have Uber/Lyft in the area?</h4>
+                    <p>There are taxis, Uber, Lyft, and car rental agencies in our area that you could look into as transportation.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Do you have a laundry room?</h4>
+                    <p>We do not. The closest laundromat is 3 miles down the road at the MidValley Shopping Center</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Do you have a dumping station?</h4>
+                    <p>We do not have a dumping station. If you would like to dump then you have to rent a site at the daily rate to use the hookups.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Communication Response Rate</h4>
+                    <p>Our office is inundated with all communications - email, calls, and voicemails - and we are responding to them as quickly as possible in the order that they were received. We only have one phone line that is extremely busy, so if you get our voicemail you can leave a message and someone in our office will call you back as soon as they can. If you do not leave a message we will not know to call you back. You can also send your information via email to secure your reservation. All of our reservations are first-come-first-serve basis as we are a small boutique park and only have 35 sites total.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">Confusion on Arrival & Departure Dates</h4>
+                    <p>Our confirmation is written as your arrival date to your departure date, just like a hotel reservation.</p>
+                    <br>
+                    <h4 class="text-lg font-bold">How long does it take for a refund to process?</h4>
+                    <p>Our terminal closes the batch the night your refund was processed, pushing your refund through our system the following day. Please allow ample time for your bank's processing. With most financial institutions it can take 7-10 business days before you see a reflection on your account.</p>
+                </div>
             </div>
         </div>
-        <div class="flex-auto w-full md:ml-6">
-            <h1 class="text-4xl mb-4"><span class="font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-blue-400">Connect</span> by AgeWell</h1>
-            <p class="text-xl text-gray-600 mb-6 leading-8">
-                Connect by AgeWell is a social interaction service creating meaningful connections across generations to foster wellness and positive aging by connecting members with virtual companions, providing a space to participate in events from the comfort of their home or facility and facilitating a platform for members and their caregivers to stay organized.
-            </p>
+    </div>
+</section>
+<div class="relative ">
+    <div class="shape absolute right-0 left-0 bottom-0 w-full text-asparagus-400 overflow-hidden">
+        <svg class="w-full h-auto origin-top"  viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>
+    </div>
+</div>
+<section id="covid" class="pb-12 pt-26 md:pt-24 md:pb-24 bg-asparagus-400">
+    <div class="flex flex-col mb-10 w-3/4 mx-auto">
+        <h1 class="text-4xl text-white mb-6 font-bold">Update on COVID 19</h1>
+        <div class="text-xl text-white mb-6 leading-8">
+            <p>We understand that the recent news and uncertainty surrounding the COVID-19 situation may have caused you to re-think your travel plans. Whether you have a trip booked or are planning upcoming travel, we will do whatever we can to support you. We will continue to monitor the situation, including restrictions an updates to travel policies that my impact you. In order to reassure our customers and their families, we want you to know that we are all taking extra precautions, to ensure your health and safety.</p>
+
+            <p>In the front office, surfaces have been cleared of communal items and are being disinfected between customers checking in and we are diligent about wiping down the counters and washing our own hands after each use. Check-in slips and maps are prepared by the staff and receipts emailed to you directly. We will be offering the CASH price discount to all customers, encouraging all to use their credit cards or personal checks to avoid sharing germs on the common currency.</p>
+
+            <p>For public saftey concerns, all of our restrooms and showers are currently closed and we are currently only accepting reservatrions for self-contained trailers and RVs.</p>
+
+            <p>We are asking that you reschedule your trip if you are feeling ill, or if you’ve been exposed to the virus (to your knowledge) in anyway. We will not be charging cancellations fees in these circumstances.</p>
+
+            <p>Our top priority is everyone’s health and wellbeing. We highly recommend customers everywhere follow the health and travel advice of relevant authorities. Thank you for remembering we are a family-run business and we consider our customers as part of ours!</p>
+
+
+            <p>Best, Jeff and Susan Campbell</p>
         </div>
+</section>
+<section id="also_available" class="py-12 md:py-24 text-gray-400 bg-gray-900">
+    <div class="w-3/4 mx-auto pt-4">
+
     </div>
 </section>

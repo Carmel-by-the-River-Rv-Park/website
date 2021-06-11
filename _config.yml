@@ -18,14 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: AgeWell Technologies
-email: contact@agewelltechnologies.com
+# TO GENERATE TAILWWIND CSS FILE, RUN THIS COMMAND "npx tailwindcss-cli@latest build -o assets/css/tailwind.css"
+
+title: Carmel By The River RV Park
+email: carmelrv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  AgeWell Technologies promotes and fosters positive aging and development by cultivating human connection and advancement through the use of research-based technology.
+  Your premier destination for RV-ing in the Carmel/Monterey area. Close to all major attractions, so you can go hit the links at Pebble Beach, watch the races at Laguna Seca, lay in the sun on beautiful Carmel Beach, or simply relax in our garden-like setting and enjoy. Join us and create new traditions for years to come.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "agewelltechnologies.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: AgeWellTech
+url: "carmelrv.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: CarmelRV
 permalink: pretty
+
+collections:
+  - amenities
 sass:
   style: compressed
 
