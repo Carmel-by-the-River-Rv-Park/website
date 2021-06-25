@@ -13,8 +13,8 @@
 - name: FAQ
   link: /#faq
   scroll_to: "#faq"
-- name: Reservations
-  link: https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90
-  onclick: "window.open(this.href,'_blank');return false;"
+# - name: Reservations
+#   link: https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90
+#   onclick: "window.open(this.href,'_blank');return false;"
 - name: Find Us
   link: /#find_us

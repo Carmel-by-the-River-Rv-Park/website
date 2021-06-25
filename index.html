@@ -39,7 +39,7 @@ title: "Home"
                 @keyup.space.prevent="open = false; focusButton()">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     {% for item in site.data.navigation %}
-                        <a href="{{ item.link }}" class="bg-white block px-3 py-2 hover:bg-gray-300" @click="open = false;">{{  item.name }}</a>
+                        <a href="{{ item.link | relative_url  }}" class="bg-white block px-3 py-2 hover:bg-gray-300" @click="open = false;">{{  item.name }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -63,7 +63,7 @@ title: "Home"
     <nav class="hidden md:block py-4 text-left border-b border-gray-300">
         {% for item in site.data.navigation %}
             <div class="inline-block {% unless forloop.last %} border-r border-gray-200 {% endunless %}">
-                <a class="mx-6 text-lg font-light border-b-4 border-white hover:border-asparagus-500 scroll-to" data-scroll-to="{{item.scroll_to}}" href="{{ item.link }}" onclick="{{ item.onclick }}">
+                <a class="mx-6 text-lg font-light border-b-4 border-white hover:border-asparagus-500 scroll-to" data-scroll-to="{{item.scroll_to}}" href="{{ item.link | relative_url }}">
                     {{ item.name }}
                 </a>
             </div>
