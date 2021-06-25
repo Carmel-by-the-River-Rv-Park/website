@@ -10,7 +10,7 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
   	fontFamily: {
-  		sans: ['"Nunito Sans"', 'san-serif'],
+  		sans: ['"Josefin Sans"', 'san-serif'],
       serif: ['"Lora"', 'serif']
   	},
     extend: {

@@ -1,15 +1,20 @@
-- name: About Us
+- name: Our Park
   link: /#about
+  scroll_to: "#about"
+- name: Accommodations
+  link: /#accommodations
+  scroll_to: "#accommodations"
 - name: Amenities
   link: /#amenities
+  scroll_to: "#amenities"
 - name: Reviews
   link: /#reviews
+  scroll_to: "#reviews"
 - name: FAQ
   link: /#faq
+  scroll_to: "#faq"
 - name: Reservations
   link: https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90
   onclick: "window.open(this.href,'_blank');return false;"
 - name: Find Us
   link: /#find_us
-- name: Covid 19
-  link: /#covid

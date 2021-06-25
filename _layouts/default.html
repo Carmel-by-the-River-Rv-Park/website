@@ -22,12 +22,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{'assets/images/favicon/favicon-16x16.png' | relative_url }}">
     <link rel="manifest" href="{{'assets/images/favicon/site.webmanifest' | relative_url }}">
     <link rel="mask-icon" href="{{'assets/images/favicon/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
-    </style>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script defer src="https://unpkg.com/alpinejs@3.0.1/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    
+    <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('a.scroll-to').bind('click', function(event) {
+        var $anchor;
+        event.preventDefault();
+        $anchor = $(this);
+        console.log("hey");
+        return $('html, body').stop().animate({
+          scrollTop: ($($anchor.data('scroll-to')).offset().top) - 77
+        }, 1500, 'easeInOutExpo');
+      });
+    </script>
   </head>
 
   <body>

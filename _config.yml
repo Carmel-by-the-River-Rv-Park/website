@@ -31,6 +31,7 @@ permalink: pretty
 
 collections:
   - amenities
+  - accommodations
 sass:
   style: compressed
 
