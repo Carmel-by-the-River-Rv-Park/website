@@ -23,7 +23,7 @@
                     <h6 class="text-white font-bold mb-3">Site Navigation</h6>
                     <ul class="list-unstyled">
                         {% for item in site.data.navigation %}
-                            <li><a class="hover:text-white" href="{{ item.link }}">{{ item.name }}</a></li>
+                            <li><a class="hover:text-white" href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
         <div class="my-4"><br></div>
         <div class="row align-items-center justify-content-md-between pb-4">
             <div class="w-full md:w-1/2">
-                <div class="copyright text-sm font-weight-bold text-center md:text-left">© {{ site.time | date: '%Y' }} <a href="{% link index.html %}" class="font-bold" target="_blank">Carmel by the River RV Park</a>.</div>
+                <div class="copyright text-sm font-weight-bold text-center md:text-left">© {{ site.time | date: '%Y' }} <a href="{% link index.html | relative_url %}" class="font-bold">Carmel by the River RV Park</a>.</div>
             </div>
         </div>
     </div>
