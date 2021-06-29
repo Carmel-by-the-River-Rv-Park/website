@@ -24,8 +24,14 @@
     <link rel="mask-icon" href="{{'assets/images/favicon/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
     <script defer src="https://unpkg.com/alpinejs@3.0.1/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  </head>
+
+  <body id="top">
+    {{content}}
+    {% include footer.html %}
+    <script>
       $('a.scroll-to').bind('click', function(event) {
         var $anchor;
         event.preventDefault();
@@ -36,10 +42,5 @@
         }, 1500, 'easeInOutExpo');
       });
     </script>
-  </head>
-
-  <body>
-    {{content}}
-    {% include footer.html %}
   </body>
 </html>

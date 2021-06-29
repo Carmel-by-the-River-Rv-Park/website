@@ -45,7 +45,7 @@ title: "Home"
             </div>
         </div>
         <div class="w-1/3 flex flex-row items-center justify-center">
-            <a href="{% link index.html %}"><img class="mx-auto w-20" src="{{ 'assets/images/frog.jpg' | relative_url }}" alt="Camping in the monterey area"></a>
+            <a class="scroll-to" data-scroll-to="#top" href="{% link index.html %}"><img class="mx-auto w-20" src="{{ 'assets/images/frog.png' | relative_url }}" alt="Camping in the monterey area"></a>
         </div>
         <div class="w-1/3 flex flex-row-reverse items-center">
             <div class="hidden md:block p-4 border-l border-gray-200">
@@ -61,6 +61,7 @@ title: "Home"
         </div>
     </nav>
     <nav class="hidden md:block py-4 text-left border-b border-gray-300">
+        <div class="container md:mx-52">
         {% for item in site.data.navigation %}
             <div class="inline-block {% unless forloop.last %} border-r border-gray-200 {% endunless %}">
                 <a class="mx-6 text-lg font-light border-b-4 border-white hover:border-asparagus-500 scroll-to" data-scroll-to="{{item.scroll_to}}" href="{{ item.link | relative_url }}">
@@ -68,6 +69,7 @@ title: "Home"
                 </a>
             </div>
         {% endfor %}
+        </div>
     </nav>
 </div>
 <section class="py-12 md:py-24">
@@ -110,13 +112,13 @@ title: "Home"
             </div>
             <div class="md:order-2 w-3/4">
                 <div class="text-asparagus-100 text-xl leading-8 font-light">
-                    <p class="mb-4">We offer full-hookup sites (including wifi and cable) that can accommodate up to 50ft RVs, with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
-                    <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, air hockey, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. Need a group meeting area? Our club room, complete with kitchen and seating for thirty, should fit any group’s needs with reservations.</p>
+                    <p class="mb-4">We offer full-hookup sites (including water, sewer, electric, wifi and cable tv) with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
+                    <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, air hockey, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. The Carmel River is a natural area and is not accessible from the park. River access is available nearby at Garland Ranch Regional Park, a short drive away.</p>
                 </div>
             </div>
         </div>
         <div class="text-center">
-            <h2 class="transition duration-200 ease-in-out mt-4 text-2xl text-asparagus-200 bg-asparagus-600 hover:text-asparagus-600 hover:bg-asparagus-200 px-4 py-2 rounded inline-block border-asparagus-700 border-2 mt-6"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
+            <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-500 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-600 border mt-6 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
             <h3 class="mt-4">or call</h3>
             <h3 class="text-xl font-bold mt-2 hover:text-asparagus-100 transition duration-200 ease-in-out">
             <a class="phone" href="tel:+18316249329">+1 (831) 624-9329</a></h3>
@@ -152,7 +154,7 @@ title: "Home"
                                 <li class="mb-4">{{ feature }}</li>
                             {% endfor %}
                         </ul>
-                        <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">Reserve <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
+                        <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">Availability <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                           </svg></a></h2>
                     </div>
@@ -239,7 +241,7 @@ title: "Home"
                 </div>
             {% endfor %}
         </div>
-        <h3 class="text-center text-white text-xl mt-12"><a class="p-2 rounded-lg bg-asparagus-400 border-asparagus-700 border-2 text-asparagus-100 hover:text-asparagus-700" href="https://g.page/carmelrv/review?rc" onclick="window.open(this.href,'_blank');return false;">Click here to share your review!</a></h3>
+        <h3 class="text-center"><a class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light mx-auto" href="https://g.page/carmelrv/review?rc" onclick="window.open(this.href,'_blank');return false;">Click here to share your review!</a></h3>
     </div>
 </section>
 
@@ -252,7 +254,7 @@ title: "Home"
                 Please view our FAQ to answer any common questions you may have. For any other questions, please call our office at <a href="tel:+18316249329" class="text-xl font-bold hover:text-asparagus-100 transition duration-200 ease-in-out">+1 (831) 624-9329</a>.
             </p>
             <div class="flex flex-row items-start">
-                <div class="w-full md:w-1/2 mr-6 font-light">
+                <div class="w-full md:w-1/2 mr-6">
                     <h4 class="text-lg font-bold">How big is your park?</h4>
                     <p>We are a small-boutique park with only 35 sites total. The layout of the park is in a loop which is just over an eighth of a mile, so the whole property is about half the size of a football field. It is a garden-like setting, with lots of foliage, flowers, and trees throughout the park. We are tucked away in a residential area, so it is quiet and peaceful.</p>
                     <br>
@@ -323,7 +325,7 @@ title: "Home"
                 Glamping in Carmel! Brand new 40 foot RV, located in a private, fenced-in site that sleeps 2-6 people. There is 1 private bedroom, 1 bathroom, and 2 couches that pullout to queen-size beds. Call office to check pricing & availability!
                 </p>
                 <p>Please call <a href="tel:+18316249329" class="text-lg font-extrabold hover:text-white">+1 (831) 624-9329</a> to inquire about availablity and rates.</p>
-                <h3 class="text-white text-xl mt-12"><span class="p-2 rounded-lg bg-asparagus-400 border-asparagus-700 border-2 text-asparagus-100 hover:text-asparagus-700"@click="open = true">View More</span></h3>
+                <h3 class="text-left"><span class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light mx-auto" @click="open = true">View More</span></h3>
               </div>
         </div>
     </div>

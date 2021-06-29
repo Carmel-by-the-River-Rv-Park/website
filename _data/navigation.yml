@@ -18,3 +18,4 @@
 #   onclick: "window.open(this.href,'_blank');return false;"
 - name: Find Us
   link: /#find_us
+  scroll_to: "#find_us"
