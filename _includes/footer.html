@@ -10,7 +10,10 @@
             <div class="flex-auto md:w-1/2 md:mr-10 mb-5">
                 <div class="flex flex-col md:w-1/2">
                     <a class="text-white" href="{% link index.html %}">{% include carmelrv-logo.html %}</a>
-                    <div class=" mx-auto mt-4 hidden md:block">
+                    <div class="mt-4 text-center">
+                        27680 Schulte Rd. Carmel, CA 93923
+                    </div>
+                    <div class=" mx-auto mt-4 md:block">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.2029442939024!2d-121.84674978471777!3d36.52509798000612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808defb200b93a83%3A0xb9ef145bedf1b51c!2sCarmel+By+the+River+RV+Park!5e0!3m2!1sen!2sus!4v1475245338381" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <ul class="flex flex-row mt-4">
@@ -24,7 +27,7 @@
                 </div>
             </div>
             <div class="flex-auto justify-self-end md:ml-10 flex flex-row">
-                <div class="w-1/2 mb-5">
+                <div class="md:w-1/2 mb-5">
                     <h6 class="text-white font-bold mb-3">Site Navigation</h6>
                     <ul class="list-unstyled">
                         {% for item in site.data.navigation %}
