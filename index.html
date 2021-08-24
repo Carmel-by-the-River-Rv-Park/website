@@ -166,21 +166,23 @@ title: "Home"
                 </div>
             </div>
         {% endfor %}
-        <div class="w-full md:w-1/3 px-6 mb-12" x-data="{ open: false }" @keydown.window.escape="open = false">
-            <div class="border border-gray-300 h-full">
-                <img src="{{ 'assets/images/jg/front.jpg' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
-                <div class="bg-white text-center p-6">
-                    <h3 class="text-xl font-bold mb-2">Vacation Rental</h3>
-                    <div class="text-lg mb-4 font-light">Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.</div>
-                    <ul>
-                        <li class="mb-4">Private, Fenced-in Patio Area</li>
-                        <li class="mb-4">Sleeps 2-4 People</li>
-                        <li class="mb-4">Reserved Parking Spot</li>
-                    </ul>
-                    <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light"><span @click = "open = true">View More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                      </svg></span></h2>
+        <div class="text-center text-sm mt-6 mb-12 clear">*Additional fees may apply for pets, extra persons or additional vehicles</div>
+    </div>
+</section>
+<section class="pt-12 bg-gradient-to-r from-asparagus-200 to-asparagus-300">
+    <div class="flex flex-col">
+        <div class="w-full px-6 mb-12" x-data="{ open: false }" @keydown.window.escape="open = false">
+            <div class="flex flex-col items-center">
+                <div class="text-center p-6">
+                    <h3 class="text-xl font-bold mb-2">No RV, No Problem!</h3>
+                    <div class="text-lg mb-4 font-light">Beautiful 40 foot RV Vacation Rental is located in a private, fenced-in site and sleeps 2-4 people.</div>
                 </div>
+                <div class="h-96 w-full md:w-1/2 overflow-hidden text-center flex flex-col justify-center items-center rounded-xl">
+                    <img src="{{ 'assets/images/jg/living.jpg' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
+                </div>
+                <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border mt-6 font-light"><span @click = "open = true">View More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg></span></h2>
             </div>
             <div x-show="open" class="fixed z-40 inset-0 overflow-y-auto flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                 <div 
@@ -255,7 +257,6 @@ title: "Home"
                 </div>
             </div>
         </div>
-        <div class="text-center text-sm mt-6">*Additional fees may apply for pets, extra persons or additional vehicles</div>
     </div>
 </section>
 
