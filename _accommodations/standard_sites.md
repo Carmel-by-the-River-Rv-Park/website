@@ -2,7 +2,7 @@
 order: 1
 name: Standard
 image: standard_sites.jpg
-details: All of our sites are filled with level, crushed granite and include water, electricity, sewer, cable, and wifi.
+details: Perfect for small and medium sized RVs and trailers with 1 or no slide outs.
 price: 135
 features: ['Full Hookup', 'BBQ/Picnic Table', 'Privacy Hedges']
 ---
