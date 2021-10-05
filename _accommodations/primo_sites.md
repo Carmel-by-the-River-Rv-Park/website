@@ -1,8 +1,8 @@
 ---
 order: 6
 name: Primo
-image: coming_soon.jpg
-details: Our best site! Big enough to host two camping families, with a paved patio, propane grill, enclosed backyard with a gazebo, large fire pit, game area, and beautiful landscaping.
+image: primo_sites.jpg
+details: Our best site! Amazing amount of space for your RV and vehicle. Includes paved patio, propane grill, enclosed backyard with a gazebo, fire pit and game area.
 price: 250
 features: ['Paved Patio', 'Gas Grill', 'Private Oasis']
 ---
