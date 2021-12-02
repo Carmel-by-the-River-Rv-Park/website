@@ -158,7 +158,7 @@ title: "Home"
                                 <li class="mb-4">{{ feature }}</li>
                             {% endfor %}
                         </ul>
-                        <div class="text-center text-smmt-6 mb-2">Rates begin at ${{ site.price }}*.</div>
+                        <div class="text-center text-smmt-6 mb-2">From ${{ site.price }} nightly*</div>
                         <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">Availability <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                           </svg></a></h2>
@@ -166,8 +166,10 @@ title: "Home"
                 </div>
             </div>
         {% endfor %}
-        <div class="text-center text-sm mt-6 mb-12 clear">*Additional fees may apply for pets, extra persons or additional vehicles</div>
     </div>
+    <div class="text-center text-sm mt-6 mb-4 clear">*Winter 2022 rates. Additional fees may apply for pets, extra persons or additional vehicles</div>
+    <div class="text-center text-sm mb-4 clear">*Trailer length is measured from front of hitch to rear bumper. Understating your length can result in a reservation not being honored.</div>
+    <div class="text-center text-sm mb-12 clear">*Rigs over 37' require a 4 night minimum stay for <i class="font-semibold">Premium</i>, <i class="font-semibold">Deluxe</i> and <i class="font-semibold">Primo</i> sites.</div>
 </section>
 <section class="pt-12 bg-gradient-to-r from-asparagus-200 to-asparagus-300">
     <div class="flex flex-col">
@@ -176,8 +178,8 @@ title: "Home"
                 <div class="text-center p-6">
                     <h3 class="text-xl font-bold mb-2">No RV, No Problem!</h3>
                     <div class="text-lg mb-4 font-light">Beautiful 40 foot RV Vacation Rental is located in a private, fenced-in site and sleeps 2-4 people.</div>
-                    <div class="text-sm">Not available until April 2022</div>
-                </div>
+<!--                     <div class="text-sm">Not available until April 2022</div>
+ -->                </div>
                 <div class="h-2/3 w-full md:w-1/2 overflow-hidden text-center flex flex-col justify-center items-center rounded-xl">
                     <img src="{{ 'assets/images/jg/front2.jpg' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
                 </div>
