@@ -109,14 +109,14 @@ title: "Home"
         <div class="flex flex-col md:flex-row justify-between items-start">
             <div class="md:order-1 text-center w-full md:w-auto md:mr-12 flex flex-row">
                 <img class="w-1/2 rounded mr-2" src="{{ 'assets/images/about-image.jpg' | relative_url }}" alt="Camping in the monterey area">
-                <a class="w-1/2 text-white font-light hover:underline" href="{{ 'assets/images/parkmap.pdf' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
-                    <img class="rounded" src="{{ 'assets/images/parkmap-thumbnail.png' | relative_url }}" alt="Carmel By the River Rv Park Map">
+                <a class="w-1/2 text-white font-light hover:underline" href="{{ 'assets/images/park-map.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
+                    <img class="rounded" src="{{ 'assets/images/parkmap-thumbnail.jpg' | relative_url }}" alt="Carmel By the River Rv Park Map">
                     <div class="uppercase text-sm py-2 px-3 bg-asparagus-500">Click to Enlarge</div>
                 </a>
             </div>
             <div class="md:order-2 w-3/4">
                 <div class="text-asparagus-100 text-xl leading-8 font-light">
-                    <p class="mb-4">We offer full-hookup sites (including water, sewer, electric, wifi and cable tv) with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
+                    <p class="mb-4">All of our sites include full utilities, (water, sewer, electric, wifi and cable tv) with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
                     <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, air hockey, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. The Carmel River is a natural area and is not accessible from the park. River access is available nearby at Garland Ranch Regional Park, a short drive away.</p>
                     <div class="mb-4">
                         <p><strong class="font-semibold">Check In:</strong> Anytime after 1:00 pm</p>
@@ -162,7 +162,7 @@ title: "Home"
                                 <li class="mb-4">{{ feature }}</li>
                             {% endfor %}
                         </ul>
-                        <div class="text-center text-smmt-6 mb-2">From ${{ site.price }} nightly*</div>
+                        <div class="text-center text-smmt-6 mb-2">From ${{ site.price }} nightly before discount*</div>
                         <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">Availability <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                           </svg></a></h2>
@@ -171,7 +171,8 @@ title: "Home"
             </div>
         {% endfor %}
     </div>
-    <div class="text-center text-sm mt-6 mb-4 clear">*Spring 2022 rates. Additional fees may apply for pets, extra persons or additional vehicles</div>
+    <div class="text-center text-sm mt-6 mb-4 clear">*Summer 2022 rates. Additional fees may apply for pets, extra persons or additional vehicles</div>
+    <div class="text-center text-sm mb-4 clear">*We offer $10 per night discounts for Seniors (not high school, the other kind), Active and Retired Military (Thank you!), First Responders, Nurses and Teachers (Bless you!)</div>
     <div class="text-center text-sm mb-4 clear">*Trailer length is measured from front of hitch to rear bumper. Understating your length can result in a reservation not being honored.</div>
     <div class="text-center text-sm mb-12 clear">*Rigs 36' and over require a 4 night minimum stay.</div>
 </section>
@@ -187,6 +188,7 @@ title: "Home"
                     <div class="flex flex-col flex-1 items-center" x-data="{ open: false }" @keydown.window.escape="open = false">
                         <div @click = "open = true" class="h-2/3 w-full md:w-2/3 text-center flex flex-col justify-center items-center">
                             <div class="text-lg mb-4 font-light">Beautiful 40 foot RV Vacation Rental is located in a private, fenced-in site and sleeps 2-4 people.</div>
+                            <div class="text-lg mb-4 font-light">$225 nightly plus county tax and cleaning fee.</div>
                             <img class="cursor-pointer rounded-xl" src="{{ 'assets/images/jg/living.jpg' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
                         </div>
                         <div class="flex flex-col items-center">
@@ -274,6 +276,7 @@ title: "Home"
                     <div class="flex flex-col flex-1 items-center" x-data="{ open: false }" @keydown.window.escape="open = false">
                         <div @click = "open = true" class="h-2/3 w-full md:w-2/3 text-center flex flex-col justify-center items-center">
                             <div class="text-lg mb-4 font-light">Charming cottage on wheels offering peace and privacy for up to 2.5 people.</div>
+                            <div class="text-lg mb-4 font-light">$175 nightly plus county tax and cleaning fee.</div>
                             <img class="cursor-pointer rounded-xl" src="{{ 'assets/images/gopher_hole/front.jpg' | relative_url }}" title="Carmel Vacation Rental" alt="A charming cottage on wheels offering peace and privacy for up to 2.5 people.">
                         </div>
                         <div class="flex flex-col items-center">
