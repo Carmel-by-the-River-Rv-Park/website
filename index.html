@@ -75,12 +75,19 @@ title: "Home"
 <section class="py-12 md:py-24">
     <div class="container mx-auto">
         <div class="flex flex-row justify-center items-center">
-            <div class="text-center w-3/4 mx-auto">
-                <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-gray-900">
-                    {% include carmelrv-logo.html %}
+            <div class="text-center flex flex-col md:flex-row items-center justify-between w-3/4 mx-auto">
+                <div class="flex-grow">
+                    <div class="w-3/4 mx-auto md:mx-0 mb-6 text-gray-900">
+                        {% include carmelrv-logo.html %}
+                        <div class="mt-4 text-center">
+                            27680 Schulte Rd. Carmel, CA 93923
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-4 text-center">
-                    27680 Schulte Rd. Carmel, CA 93923
+                <div class="hidden md:flex flex-col">
+                    <img class="h-32 mt-6 mb-2 mx-auto text-center" src="{{ 'assets/images/pets.png' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
+                    <div class="text-center font-bold">Pets Camp Free!</div>
+                    <div class="text-center mb-4 text-sm font-semibold">(Dogs can't pay and cats won't)</div>
                 </div>
             </div>
         </div> <!-- / .row -->
@@ -171,9 +178,11 @@ title: "Home"
             </div>
         {% endfor %}
     </div>
-    <img class="h-40 mt-6 mb-2 mx-auto text-center" src="{{ 'assets/images/pets.png' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
-    <div class="text-center font-bold">Pets Camp Free!</div>
-    <div class="text-center mb-4 text-sm font-semibold">(Dogs can't pay and cats won't)</div>
+    <div class="md:hidden flex flex-col">
+        <img class="h-32 mt-6 mb-2 mx-auto text-center" src="{{ 'assets/images/pets.png' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
+        <div class="text-center font-bold">Pets Camp Free!</div>
+        <div class="text-center mb-4 text-sm font-semibold">(Dogs can't pay and cats won't)</div>
+    </div>
     <div class="text-center text-sm mt-6 mb-4 clear">*Summer 2022 rates. Additional fees may apply for extra persons or additional vehicles</div>
     <div class="text-center text-sm mb-4 clear">*We offer $10 per night discounts for Seniors (not high school, the other kind), Active and Retired Military (Thank you!), First Responders, Nurses and Teachers (Bless you!)</div>
     <div class="text-center text-sm mb-4 clear">*Trailer length is measured from front of hitch to rear bumper. Understating your length can result in a reservation not being honored.</div>
@@ -187,8 +196,8 @@ title: "Home"
                     <h3 class="text-4xl font-bold mb-6">No RV, No Problem!</h3>
                     <!-- <div class="text-sm">Not available until April 2022</div> -->            
                 </div>
-                <div class="flex flex-row items-center container">
-                    <div class="flex flex-col flex-1 items-center" x-data="{ open: false }" @keydown.window.escape="open = false">
+                <div class="flex flex-col md:flex-row items-center container">
+                    <div class="flex flex-col flex-1 items-center mb-4" x-data="{ open: false }" @keydown.window.escape="open = false">
                         <div @click = "open = true" class="h-2/3 w-full md:w-2/3 text-center flex flex-col justify-center items-center">
                             <div class="text-lg mb-4 font-light">Beautiful 40 foot RV Vacation Rental is located in a private, fenced-in site and sleeps 2-4 people.</div>
                             <div class="text-lg mb-4 font-light">$225 nightly plus county tax and cleaning fee.</div>
@@ -276,7 +285,7 @@ title: "Home"
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col flex-1 items-center" x-data="{ open: false }" @keydown.window.escape="open = false">
+                    <div class="flex flex-col flex-1 items-center mb-4" x-data="{ open: false }" @keydown.window.escape="open = false">
                         <div @click = "open = true" class="h-2/3 w-full md:w-2/3 text-center flex flex-col justify-center items-center">
                             <div class="text-lg mb-4 font-light">A charming cottage on wheels for up to 2 people and a single pet. Includes a coffee bar and private patio with a fire pit.</div>
                             <div class="text-lg mb-4 font-light">$175 nightly plus county tax and cleaning fee.</div>
