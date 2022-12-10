@@ -1,6 +1,6 @@
 ---
 order: 2
-name: Wide
+name: Preferred
 image: wide_sites.jpg
 details: If your RV or Trailer is over 30' and has 2 slide outs these are your best option.
 price: 150
