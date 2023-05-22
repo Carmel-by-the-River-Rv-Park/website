@@ -1,6 +1,6 @@
 ---
 order: 5
-name: On-Site Shuttle Service
-image: shuttle.jpg
-details: Getting to town or to the links couldnt be easier with our convient on-site shuttle service. Running daily from 9am-6pm.
+name: A commitment to service
+image: 50years.jpg
+details: Our park has proudly been privately owned and operated for almost half a decade.
 ---
