@@ -33,6 +33,7 @@
                         {% for item in site.data.navigation %}
                             <li><a class="hover:text-white" href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
                         {% endfor %}
+                        <li><a class="hover:text-white" href="{% link privacy.html %}">Privacy</a></li>
                     </ul>
                 </div>
             </div>
