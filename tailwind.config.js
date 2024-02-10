@@ -40,6 +40,13 @@ module.exports = {
           '900': '#32170d',
         },
       },
+      minHeight: {
+        '600': '600px',
+        '400': '400px',
+      },
+      height: {
+        '70vh': '70vh',
+      }
     },
   },
   plugins: [

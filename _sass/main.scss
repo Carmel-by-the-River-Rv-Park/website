@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap');
-.hero {
-	height: 80vh;
-	min-height: 600px;
-}
+.overlay::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(120deg, #000000, #170b09);
+	opacity: .4;
+} 
 .shape>* {
     -webkit-transform: scale(2);
     transform: scale(2);

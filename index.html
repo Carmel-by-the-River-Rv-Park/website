@@ -72,43 +72,42 @@ title: "Carmel, California RV Resort"
         </div>
     </nav>
 </div>
-<section class="hero relative">
+<section class="h-70vh min-h-400 lg:min-h-600 relative">
     <div class="flex flex-row justify-center items-center z-10 absolute top-0 h-full w-full">
         <div class="text-center flex flex-col md:flex-row items-center justify-between w-3/4 mx-auto">
             <div class="flex-grow">
                 <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-white">
                     {% include carmelrv-logo.html %}
-                    <div class="mt-4 text-center">
-                        27680 Schulte Rd. Carmel, CA 93923
-                    </div>
+                    <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-lg text-gray-800 bg-white hover:text-white hover:bg-asparagus-500 px-2 lg:px-6 py-2 rounded mt-8 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
                 </div>
+                <a href="{{ '/#about' | relative_url }}" class="scroll-to" data-scroll-to="#about" @click="open = false;">
+                    <svg class="text-white hover:text-gray-200 w-10 h-10 mx-auto" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>741</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(1.000000, 4.000000)" fill="currentColor"> <path d="M1.336,4.667 C1.535,4.667 1.74,4.712 1.932,4.808 L8.002,7.842 L14.071,4.808 C14.73,4.478 15.53,4.746 15.859,5.405 C16.189,6.063 15.921,6.864 15.263,7.193 L8.597,10.526 C8.222,10.714 7.779,10.714 7.404,10.526 L0.738,7.193 C0.08,6.864 -0.188,6.063 0.142,5.405 C0.377,4.937 0.847,4.667 1.336,4.667 L1.336,4.667 Z" class="si-glyph-fill"> </path> <path d="M1.336,0.334 C1.436,0.334 1.537,0.356 1.633,0.404 L8.002,3.588 L14.369,0.404 C14.698,0.24 15.098,0.373 15.264,0.702 C15.428,1.031 15.295,1.431 14.965,1.597 L8.299,4.93 C8.111,5.024 7.891,5.024 7.703,4.93 L1.037,1.597 C0.707,1.432 0.574,1.032 0.738,0.702 C0.855,0.469 1.091,0.334 1.336,0.334 L1.336,0.334 Z"> </path> </g> </g> </g></svg>
+                </a>
             </div>
         </div>
     </div> <!-- / .row -->
-    <div class="overlay z-0 absolute top-0 h-full w-full overflow-hidden">
-        <video id="video" autoplay="" loop="" preload="auto" width="auto" height="auto" muted="" class="min-w-full min-h-fit object-contain">
+    <div class="overlay z-0 min-h-400 relative lg:absolute top-0 h-full w-full overflow-hidden">
+        <video id="video" autoplay="" loop="" preload="auto" width="auto" height="auto" muted="" class="hidden lg:block min-w-full min-h-fit object-contain">
             <source src="{{ 'assets/videos/carmelrv-promo.mp4' | relative_url }}" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2"> 
             <img loading="lazy" src="{{ 'assets/images/header-bg.jpg' | relative_url }}" width="1152" height="608" alt="Lush Rv Resort"> 
         </video>
+        <img class="lg:hidden object-cover h-full" loading="lazy" src="{{ 'assets/images/header-bg.jpg' | relative_url }}" alt="Lush Rv Resort">
     </div>
 </section>
-<section id="about" class="pb-12 pt-26 md:pt-52 md:pb-24 bg-asparagus-400">
+<section id="about" class="pb-12 pt-6 lg:pt-20 lg:pb-24 bg-asparagus-400">
     <div class="mb-10 w-3/4 mx-auto">
         <h2 class="text-3xl text-asparagus-100 mb-6 leading-10 font-bold">
             Our Park 
         </h2>
-        <p class="mt-4 mb-6 text-asparagus-100 text-xl leading-8">Family owned and operated for over 40 years, our boutique park is nestled into the lush natural surroundings of Carmel Valley and has all the amenities you need to enjoy your stay on the Monterey Peninsula.</p>
-        <div class="flex flex-col md:flex-row justify-between items-start">
-            <div class="md:order-1 text-center w-full md:w-auto md:mr-12 flex flex-row">
-                <div class="w-1/2 h-96 rounded mr-2 overflow-hidden">
-                    <img class="object-cover h-full" src="{{ 'assets/images/about-image.jpg' | relative_url }}" alt="Camping in the monterey area">
-                </div>
-                <a class="w-1/2 h-96 rounded overflow-hidden text-white font-light hover:underline" href="{{ 'assets/images/parkmap.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
+        <p class="mt-4 mb-6 text-asparagus-100 text-xl leading-8">Family owned and operated over 50 years and counting, our boutique rv park is nestled into the lush natural surroundings of Carmel Valley and has all the amenities you need to enjoy your stay on the Monterey Peninsula.</p>
+        <div class="flex flex-col md:flex-row items-start">
+            <div class="md:order-1 text-center w-full lg:w-1/4 lg:mr-10 flex-none">
+                <a class="h-96 rounded overflow-hidden text-white font-light hover:underline mb-4" href="{{ 'assets/images/parkmap.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
                     <img class="object-cover h-full" src="{{ 'assets/images/parkmap-thumbnail.jpg' | relative_url }}" alt="Carmel By the River Rv Park Map">
                     <div class="uppercase text-sm py-2 px-3 bg-asparagus-500">Click to Enlarge</div>
                 </a>
             </div>
-            <div class="md:order-2 w-3/4">
+            <div class="md:order-2 flex-auto">
                 <div class="text-asparagus-100 text-xl leading-8 font-light">
                     <p class="mb-4">All of our sites include full utilities, (water, sewer, electric, wifi and cable tv) with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
                     <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. The Carmel River is a natural area and is not accessible from the park. River access is available nearby at Garland Ranch Regional Park, a short drive away.</p>
