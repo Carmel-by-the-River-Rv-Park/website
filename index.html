@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Carmel, California RV Resort"
 ---
 <div class="sticky top-0 text-center z-40 bg-white">
     <nav class="flex flex-row border-b border-gray-400 items-center">
@@ -48,16 +48,16 @@ title: "Home"
             <a class="scroll-to" data-scroll-to="#top" href="{% link index.html %}"><img class="mx-auto w-20" src="{{ 'assets/images/frog.png' | relative_url }}" alt="Camping in the monterey area"></a>
         </div>
         <div class="w-1/3 flex flex-row-reverse items-center">
-            <div class="hidden md:block p-4 border-l border-gray-200">
-                <h3 class="text-sm uppercase mb-2">Front Office</h3>
-                <h2 class="font-bold"><a href="tel:+18316249329">+1 (831) 624-9329</a></h2>
-            </div>
             <a class="p-4 border-l border-gray-200 hover:bg-gray-100" href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-2 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <p class="text-xs uppercase">Book My Stay</p>
             </a>
+            <div class="hidden md:block p-4 border-l border-gray-200">
+                <h3 class="text-sm uppercase mb-2">Front Office</h3>
+                <h2 class="font-bold"><a href="tel:+18316249329">+1 (831) 624-9329</a></h2>
+            </div>
         </div>
     </nav>
     <nav class="hidden md:block py-4 text-left border-b border-gray-300">
@@ -72,41 +72,26 @@ title: "Home"
         </div>
     </nav>
 </div>
-<!-- <div class="absolute top-44 right-8 hidden md:flex flex-col">
-    <img class="h-32 mt-6 mb-2 mx-auto text-center" src="{{ 'assets/images/pets.png' | relative_url }}" title="Carmel Vacation Rental" alt="Beautiful 40 foot RV, located in a private, fenced-in site that sleeps 2-4 people.">
-    <div class="text-center font-bold">Pets Camp Free!</div>
-    <div class="text-center mb-4 text-sm font-semibold">(Dogs can't pay and cats won't)</div>
-</div> -->
-<section class="py-12 md:py-24">
-    <div class="container mx-auto">
-        <div class="flex flex-row justify-center items-center">
-            <div class="text-center flex flex-col md:flex-row items-center justify-between w-3/4 mx-auto">
-                <div class="flex-grow">
-                    <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-gray-900">
-                        {% include carmelrv-logo.html %}
-                        <div class="mt-4 text-center">
-                            27680 Schulte Rd. Carmel, CA 93923
-                        </div>
+<section class="hero relative">
+    <div class="flex flex-row justify-center items-center z-10 absolute top-0 h-full w-full">
+        <div class="text-center flex flex-col md:flex-row items-center justify-between w-3/4 mx-auto">
+            <div class="flex-grow">
+                <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-white">
+                    {% include carmelrv-logo.html %}
+                    <div class="mt-4 text-center">
+                        27680 Schulte Rd. Carmel, CA 93923
                     </div>
                 </div>
             </div>
-        </div> <!-- / .row -->
-        <div class="flex flex-row mt-12">
-            <div class="w-3/4 mx-auto">
-                <!-- Video -->
-                <div class="relative z-10">
-                    <video class="shadow-lg rounded-lg mx-auto" src="{{ 'assets/videos/top-video-1.mp4' | relative_url }}" autoplay controls>
-                    <!-- <img class="shadow-lg rounded-lg" src="{{ 'assets/header-bg.jpg' | relative_url }}" > -->
-                </div>
-            </div>
         </div>
+    </div> <!-- / .row -->
+    <div class="overlay z-0 absolute top-0 h-full w-full overflow-hidden">
+        <video id="video" autoplay="" loop="" preload="auto" width="auto" height="auto" muted="" class="min-w-full min-h-fit object-contain">
+            <source src="{{ 'assets/videos/carmelrv-promo.mp4' | relative_url }}" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2"> 
+            <img loading="lazy" src="{{ 'assets/images/header-bg.jpg' | relative_url }}" width="1152" height="608" alt="Lush Rv Resort"> 
+        </video>
     </div>
 </section>
-<div class="relative -mt-26 md:-mt-52">
-    <div class="shape absolute right-0 left-0 bottom-0 w-full text-asparagus-400 overflow-hidden">
-        <svg class="w-full h-auto origin-top"  viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>
-    </div>
-</div>
 <section id="about" class="pb-12 pt-26 md:pt-52 md:pb-24 bg-asparagus-400">
     <div class="mb-10 w-3/4 mx-auto">
         <h2 class="text-3xl text-asparagus-100 mb-6 leading-10 font-bold">
@@ -115,16 +100,18 @@ title: "Home"
         <p class="mt-4 mb-6 text-asparagus-100 text-xl leading-8">Family owned and operated for over 40 years, our boutique park is nestled into the lush natural surroundings of Carmel Valley and has all the amenities you need to enjoy your stay on the Monterey Peninsula.</p>
         <div class="flex flex-col md:flex-row justify-between items-start">
             <div class="md:order-1 text-center w-full md:w-auto md:mr-12 flex flex-row">
-                <img class="w-1/2 rounded mr-2" src="{{ 'assets/images/about-image.jpg' | relative_url }}" alt="Camping in the monterey area">
-                <a class="w-1/2 text-white font-light hover:underline" href="{{ 'assets/images/parkmap.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
-                    <img class="rounded" src="{{ 'assets/images/parkmap-thumbnail.jpg' | relative_url }}" alt="Carmel By the River Rv Park Map">
+                <div class="w-1/2 h-96 rounded mr-2 overflow-hidden">
+                    <img class="object-cover h-full" src="{{ 'assets/images/about-image.jpg' | relative_url }}" alt="Camping in the monterey area">
+                </div>
+                <a class="w-1/2 h-96 rounded overflow-hidden text-white font-light hover:underline" href="{{ 'assets/images/parkmap.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
+                    <img class="object-cover h-full" src="{{ 'assets/images/parkmap-thumbnail.jpg' | relative_url }}" alt="Carmel By the River Rv Park Map">
                     <div class="uppercase text-sm py-2 px-3 bg-asparagus-500">Click to Enlarge</div>
                 </a>
             </div>
             <div class="md:order-2 w-3/4">
                 <div class="text-asparagus-100 text-xl leading-8 font-light">
                     <p class="mb-4">All of our sites include full utilities, (water, sewer, electric, wifi and cable tv) with the option of 30 or 50 amp. Your site also comes outfitted with a picnic table and charcoal grill for your enjoyment so you can sit back and relax in our serene setting as the soundtrack of chirping frogs lulls you to sleep every night.</p>
-                    <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, air hockey, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. The Carmel River is a natural area and is not accessible from the park. River access is available nearby at Garland Ranch Regional Park, a short drive away.</p>
+                    <p class="mb-4">Guests are welcome to enjoy our recreation room with a lounge area, billiards, and ping pong tables. For your convenience there is a general store located in our office, which offers non-perishable groceries, cold soft drinks, and RV supplies. Clean bathrooms and hot showers are also available for your comfort. The Carmel River is a natural area and is not accessible from the park. River access is available nearby at Garland Ranch Regional Park, a short drive away.</p>
                     <div class="mb-4">
                         <p><strong class="font-semibold">Check In:</strong> Anytime after 1:00 pm</p>
                         <p><strong class="font-semibold">Check Out:</strong> Anytime before 12:00 pm</p>
@@ -159,19 +146,26 @@ title: "Home"
         {% assign sites = site.accommodations | sort: "order" %}
         {% for site in sites %}
             <div class="w-full md:w-1/3 px-6 mb-12">
-                <div class="border border-gray-300 h-full">
+                <div class="border border-gray-300 h-full flex flex-col">
                     <img src="{{ 'assets/images/' | append: site.image | relative_url }}" title="{{ site.name }}" alt="{{ site.details }}">
-                    <div class="bg-white text-center p-6">
-                        <h3 class="text-xl font-bold mb-2">{{ site.name }}</h3>
-                        <div class="text-lg mb-4 font-light">{{ site.details }}</div>
-                        <ul>
-                            {% for feature in site.features %}
-                                <li class="mb-4">{{ feature }}</li>
-                            {% endfor %}
-                        </ul>
-                        <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">Availability <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                          </svg></a></h2>
+                    <div class="flex-auto flex flex-col p-6">
+                        <div class="bg-white text-center flex-auto">
+                            <h3 class="text-xl font-bold mb-2">{{ site.name }}</h3>
+                            <div class="text-lg mb-4 font-light">{{ site.details }}</div>
+                            <ul>
+                                {% for feature in site.features %}
+                                    <li class="mb-4">{{ feature }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <h2 class="flex-none uppercase justify-center flex flex-row items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border font-light">
+                            <a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">
+                                Availability 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </h2>
                     </div>
                 </div>
             </div>
