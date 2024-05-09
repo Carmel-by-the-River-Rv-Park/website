@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+.font-logo {
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 .overlay::after {
 	content: "";
 	position: absolute;

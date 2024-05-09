@@ -45,7 +45,7 @@ title: "Riverside RV Resort in Carmel, California"
             </div>
         </div>
         <div class="w-1/3 flex flex-row items-center justify-center">
-            <a class="scroll-to" data-scroll-to="#top" href="{% link index.html %}"><img class="mx-auto w-20" src="{{ 'assets/images/frog.png' | relative_url }}" alt="Camping in the monterey area"></a>
+            <a class="scroll-to" data-scroll-to="#top" href="{% link index.html %}"><div class="w-16 mx-auto hover:text-gray-500">{% include frog.html %}</div></a>
         </div>
         <div class="w-1/3 flex flex-row-reverse items-center">
             <a class="p-4 border-l border-gray-200 hover:bg-gray-100" href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">
@@ -76,8 +76,10 @@ title: "Riverside RV Resort in Carmel, California"
     <div class="flex flex-row justify-center items-center z-10 absolute top-0 h-full w-full">
         <div class="text-center flex flex-col md:flex-row items-center justify-between w-3/4 mx-auto">
             <div class="flex-grow">
-                <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-white">
-                    {% include carmelrv-logo.html %}
+                <div class="w-3/4 md:w-1/2 mx-auto mb-6 text-white" title="Carmel by the River RV Resort">
+                    <!-- <h1 class="font-serif text-7xl font-light text-center">Carmel by the River</h1>
+                    <h3 class="font-serif text-2xl uppercase font-thin text-center">Rv Resort</h3> -->
+                    {% include wordmark.html %}
                     <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-lg text-gray-800 bg-white hover:text-white hover:bg-asparagus-500 px-2 lg:px-6 py-2 rounded mt-8 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
                 </div>
                 <a href="{{ '/#about' | relative_url }}" class="scroll-to" data-scroll-to="#about" @click="open = false;">
@@ -96,14 +98,14 @@ title: "Riverside RV Resort in Carmel, California"
 </section>
 <section id="about" class="pb-12 pt-6 lg:pt-20 lg:pb-24 bg-asparagus-400">
     <div class="mb-10 w-3/4 mx-auto">
-        <h2 class="text-3xl text-asparagus-100 mb-6 leading-10 font-bold">
+        <h2 class="text-3xl text-asparagus-100 mb-6 leading-10 font-semibold font-logo">
             Our Park 
         </h2>
         <p class="mt-4 mb-6 text-asparagus-100 text-xl leading-8">Family owned and operated over 50 years and counting, our boutique rv park is nestled into the lush natural surroundings of Carmel Valley and has all the amenities you need to enjoy your stay on the Monterey Peninsula.</p>
         <div class="flex flex-col md:flex-row items-start">
             <div class="md:order-1 text-center w-full lg:w-1/4 lg:mr-10 flex-none">
-                <a class="h-96 rounded overflow-hidden text-white font-light hover:underline mb-4" href="{{ 'assets/images/parkmap.jpg' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
-                    <img class="object-cover h-full" src="{{ 'assets/images/parkmap-thumbnail.jpg' | relative_url }}" alt="Carmel By the River Rv Park Map">
+                <a class="h-96 rounded overflow-hidden text-white font-light hover:underline mb-4" href="{{ 'assets/images/parkmap_pdf.pdf' | relative_url }}" onclick="window.open(this.href,'_blank');return false;">
+                    <img class="object-cover h-full" src="{{ 'assets/images/parkmap_thumb.png' | relative_url }}" alt="Carmel By the River Rv Resort Map">
                     <div class="uppercase text-sm py-2 px-3 bg-asparagus-500">Click to Enlarge</div>
                 </a>
             </div>
@@ -135,7 +137,7 @@ title: "Riverside RV Resort in Carmel, California"
 <section id="accommodations" class="pt-12 bg-white">
     <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
         <div class="flex-auto w-full md:w-1/2 mt-16 md:mt-28 md:mr-6 md:order-1 text-center">
-            <h1 class="text-4xl mb-4 font-bold">Accommodations</h1>
+            <h1 class="text-4xl mb-4 font-semibold font-logo">Accommodations</h1>
             <p class="text-xl text-gray-600 mb-6 leading-8">
                 We offer a variety of site types to fit your needs. All of our sites are filled with level, crushed granite and include water, electricity, sewer, high speed WiFi, cable TV, private BBQ's and are pet friendly. Tent and car camping not permitted.
             </p>
@@ -184,7 +186,7 @@ title: "Riverside RV Resort in Carmel, California"
 <section id="amenities" class="pb-12 md:pb-24 bg-white">
     <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
         <div class="flex-auto w-full md:w-1/2 mt-16 md:mt-28 md:mr-6 md:order-1 text-center">
-            <h1 class="text-4xl mb-4 font-bold">Amenities</h1>
+            <h1 class="text-4xl mb-4 font-semibold font-logo">Amenities</h1>
             <p class="text-xl text-gray-600 mb-6 leading-8">
                 Close to all major attractions, so you can go hit the links at Pebble Beach, watch the races at Laguna Seca, lay in the sun on beautiful Carmel Beach, or simply relax in our garden-like setting and enjoy.
             </p>
@@ -265,7 +267,7 @@ title: "Riverside RV Resort in Carmel, California"
 <section id="faq" class="py-12 md:py-24 bg-white">
     <div class="flex flex-col md:flex-row justify-between items-center w-3/4 mx-auto">
         <div class="flex-auto w-full">
-            <h1 class="text-4xl mb-4">Frequently Asked Questions</h1>
+            <h1 class="text-4xl mb-4 font-semibold font-logo">Frequently Asked Questions</h1>
             <p class="text-xl text-gray-600 mb-6 leading-8">
                 Please view our FAQ to answer any common questions you may have. For any other questions, please call our office at <a href="tel:+18316249329" class="text-xl font-bold hover:text-asparagus-100 transition duration-200 ease-in-out">+1 (831) 624-9329</a>.
             </p>

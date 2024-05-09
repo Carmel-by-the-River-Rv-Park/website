@@ -11,7 +11,7 @@ module.exports = {
   theme: {
   	fontFamily: {
   		sans: ['"Josefin Sans"', 'san-serif'],
-      serif: ['"Lora"', 'serif']
+      serif: ['"EB Garamond"', 'serif']
   	},
     extend: {
       colors: {
