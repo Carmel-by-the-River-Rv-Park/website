@@ -2,7 +2,7 @@
 order: 6
 name: Primo
 image: primo_sites.jpg
-details: Our best site! Amazing amount of space for your RV and vehicle. Includes paved patio, propane grill, enclosed backyard with a gazebo, fire pit and game area.
+details: Our best sites! Amazing amount of space for your RV and vehicle or second RV! Includes paved patio, propane grill, private gazebo, and a fire pit.  
 price: 235
-features: ['Paved Patio', 'Gas Grill', 'Private Oasis']
+features: ['Extra Wide Paved Patio', 'Gas Grill', 'Private Gazebo']
 ---
