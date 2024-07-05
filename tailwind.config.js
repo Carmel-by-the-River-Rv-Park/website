@@ -11,7 +11,8 @@ module.exports = {
   theme: {
   	fontFamily: {
   		sans: ['"Josefin Sans"', 'san-serif'],
-      serif: ['"EB Garamond"', 'serif']
+      serif: ['"EB Garamond"', 'serif'],
+      cusive: ['"Dynalight"', 'cursive']
   	},
     extend: {
       colors: {

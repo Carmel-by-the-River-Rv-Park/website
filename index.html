@@ -48,7 +48,7 @@ title: "Riverside RV Resort in Carmel, California"
             <a class="scroll-to" data-scroll-to="#top" href="{% link index.html %}"><div class="w-16 mx-auto hover:text-gray-500">{% include frog.html %}</div></a>
         </div>
         <div class="w-1/3 flex flex-row-reverse items-center">
-            <a class="p-4 border-l border-gray-200 hover:bg-gray-100" href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">
+            <a class="p-4 border-l border-gray-200 hover:bg-gray-100" href="{% site.booking_url %}" onclick="window.open(this.href,'_blank');return false;">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-2 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -80,7 +80,7 @@ title: "Riverside RV Resort in Carmel, California"
                     <!-- <h1 class="font-serif text-7xl font-light text-center">Carmel by the River</h1>
                     <h3 class="font-serif text-2xl uppercase font-thin text-center">Rv Resort</h3> -->
                     {% include wordmark.html %}
-                    <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-lg text-gray-800 bg-white hover:text-white hover:bg-asparagus-500 px-2 lg:px-6 py-2 rounded mt-8 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
+                    <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-lg text-gray-800 bg-white hover:text-white hover:bg-asparagus-500 px-2 lg:px-6 py-2 rounded mt-8 font-light"><a href="{% site.booking_url %}" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
                 </div>
                 <a href="{{ '/#about' | relative_url }}" class="scroll-to" data-scroll-to="#about" @click="open = false;">
                     <svg class="text-white hover:text-gray-200 w-10 h-10 mx-auto" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>741</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(1.000000, 4.000000)" fill="currentColor"> <path d="M1.336,4.667 C1.535,4.667 1.74,4.712 1.932,4.808 L8.002,7.842 L14.071,4.808 C14.73,4.478 15.53,4.746 15.859,5.405 C16.189,6.063 15.921,6.864 15.263,7.193 L8.597,10.526 C8.222,10.714 7.779,10.714 7.404,10.526 L0.738,7.193 C0.08,6.864 -0.188,6.063 0.142,5.405 C0.377,4.937 0.847,4.667 1.336,4.667 L1.336,4.667 Z" class="si-glyph-fill"> </path> <path d="M1.336,0.334 C1.436,0.334 1.537,0.356 1.633,0.404 L8.002,3.588 L14.369,0.404 C14.698,0.24 15.098,0.373 15.264,0.702 C15.428,1.031 15.295,1.431 14.965,1.597 L8.299,4.93 C8.111,5.024 7.891,5.024 7.703,4.93 L1.037,1.597 C0.707,1.432 0.574,1.032 0.738,0.702 C0.855,0.469 1.091,0.334 1.336,0.334 L1.336,0.334 Z"> </path> </g> </g> </g></svg>
@@ -121,7 +121,7 @@ title: "Riverside RV Resort in Carmel, California"
             </div>
         </div>
         <div class="text-center">
-            <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-500 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-600 border mt-6 font-light"><a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
+            <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-500 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-600 border mt-6 font-light"><a href="{% site.booking_url %}" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
             <h3 class="mt-4">or call</h3>
             <h3 class="text-xl font-bold mt-2 hover:text-asparagus-100 transition duration-200 ease-in-out">
             <a class="phone" href="tel:+18316249329">+1 (831) 624-9329</a></h3>
@@ -160,7 +160,7 @@ title: "Riverside RV Resort in Carmel, California"
                             </ul>
                         </div>
                         <h2 class="flex-none uppercase justify-center flex flex-row items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-400 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-500 border font-light">
-                            <a href="https://bookings7.rmscloud.com/obookings3/Search/Index/13952/90" onclick="window.open(this.href,'_blank');return false;">
+                            <a href="{% site.booking_url %}" onclick="window.open(this.href,'_blank');return false;">
                                 Availability 
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mt-2 inline-flex" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
