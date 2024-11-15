@@ -56,7 +56,7 @@ title: "Riverside RV Resort in Carmel, California"
             </a>
             <div class="hidden md:block p-4 border-l border-gray-200">
                 <h3 class="text-sm uppercase mb-2">Front Office</h3>
-                <h2 class="font-bold"><a href="tel:+18316249329">+1 (831) 624-9329</a></h2>
+                <h2 class="font-bold"><a href="tel:+{{site.phone}}">{{ site.phone }}</a></h2>
             </div>
         </div>
     </nav>
@@ -124,7 +124,7 @@ title: "Riverside RV Resort in Carmel, California"
             <h2 class="uppercase text-center inline-flex items-center transition duration-200 ease-in-out text-xl text-white bg-asparagus-500 hover:text-asparagus-600 hover:bg-asparagus-200 px-12 py-2 rounded border-asparagus-600 border mt-6 font-light"><a href="{{ site.booking_url }}" onclick="window.open(this.href,'_blank');return false;"><i class="far fa-calendar-alt"></i> Book Your Stay</a></h2>
             <h3 class="mt-4">or call</h3>
             <h3 class="text-xl font-bold mt-2 hover:text-asparagus-100 transition duration-200 ease-in-out">
-            <a class="phone" href="tel:+18316249329">+1 (831) 624-9329</a></h3>
+            <a class="phone" href="tel:+{{site.phone}}">{{ site.phone }}</a></h3>
         </div>
     </div>
 </section>
