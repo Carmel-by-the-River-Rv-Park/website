@@ -1,6 +1,6 @@
 ---
-order: 9
-name: General Store
+order: 3
+name: Sundry Shop
 image: general_store.jpg
-details: Our general store in the main office is here to provide you with common RV supplies, staple snacks, cold soft drinks, and camping food. We also have a large collection of DVDs for rent.
+details: Our sundry shop in the main office is here to provide you with common RV supplies, staple snacks, cold soft drinks, and camping food.
 ---

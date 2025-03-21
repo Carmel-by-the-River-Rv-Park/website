@@ -196,13 +196,14 @@ title: "Riverside RV Resort in Carmel, California"
     <div class="flex flex-row flex-wrap justify-center md:mx-2">
         {% assign amenities = site.amenities | sort: "order" %}
         {% for amenity in amenities %}
-            <div class="w-full md:w-1/4 px-4 mb-6" x-data="{open: false}">
+            <div class="w-full md:w-1/3 mb-6" x-data="{open: false}">
                 <div class="gallery-photo expandable-photo cursor-pointer" @click="open = true">
                     <div class="inner object-contain relative">
                         <img src="{{ 'assets/images/' | append: amenity.image | relative_url }}" title="{{ amenity.name }}" alt="{{ amenity.details }}">
                     </div>
+                    <div class="overlay"></div>
                 </div>
-                <div class="mt-4 mb-4 text-xl font-light uppercase tracking-tight">{{ amenity.name }}</div>
+                <div class=" px-2 text-center mt-4 mb-4 text-xl font-light uppercase tracking-tight">{{ amenity.name }}</div>
                 <div x-show="open" class="fixed z-40 inset-0 overflow-y-auto flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                     <div 
                         x-show="open" 

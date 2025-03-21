@@ -1,6 +1,6 @@
 ---
-order: 10
+order: 4
 name: Bark Park
 image: bark_park.jpg
-details: The "BARK PARK" is open fur (pun) your canine companions. Let off-leash fun begin!!! 
+details: Our fully fenced in bark park is open for your pet's safety.
 ---
